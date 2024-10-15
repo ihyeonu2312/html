@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        li {display: inline;}
+        .G {
+            display: inline-block; width: 30px; height: 40px;
+            background: url('https://www.google.com/images/nav_logo321.webp') -24px 0;
+            background-size: 167px;
+            text-indent: -9999px;
+        }
+        li a {
+            display: inline-block; width: 20px; height: 40px;
+            background: url('https://www.google.com/images/nav_logo321.webp') -74px 0;
+            background-size: 167px;
+            text-indent: -9999px;
+        }
+        .gle{
+            display: inline-block; width: 65px; height: 40px;
+            background: url('https://www.google.com/images/nav_logo321.webp')-94px 0;
+            background-size: 167px;
+            text-indent: -9999px;
+        }
+        li a:hover {background-position-x: -53px;}
+        /* 
+            linear-gradient(방향, 컬러스톱, [컬러스톱, ...])
+            right
+        */
+        body {background: linear-gradient(90deg, white 90%, black);}
+        div:not(.multi-backgroud) {height: 50px;}
+        div {height: 50px;}
+        .linear-repeat {background: repeating-linear-gradient(45deg, white 20px, black 40px);}
+        .linear-repeat-pattern {background: repeating-linear-gradient(45deg, yellow 0,yellow 20px, black 20px, black 40px);}
+        
+        .radial {height: 200px; width: 100px; background: radial-gradient(circle at 10px 50%, white , blue);}
+
+        .multi-background {width: 150px; }
+        .multi-background div {height: 150px; border: 1px solid;}
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="G"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li class="gle"><a href="#">7</a></li>
+    </ul>
+    <div class="linear-repeat"></div>
+    <div class="linear-repeat-pattern"></div>
+    <div class="radial"></div>
+
+    <div class="multi-background">
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
