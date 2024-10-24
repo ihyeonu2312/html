@@ -14,6 +14,7 @@
 
         const now = new Date();
         now.setMonth(11);
+        now.setDate(1);
         // now.setDate(24);
         // const m = moment(now);
         // const mid = moment('2023/10/23', 'YYYY/MM/DD')
@@ -23,8 +24,7 @@
      
 
         const days = ['일', '월', '화', '수', '목', '금', '토']
-        const lastDates = [31,28,31,30,31,30,31,31,30,31,30,31];
-        now.setDate(1);
+        const lastDates = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
         const firstDay = now.getDay();
         let lastDate = lastDates[now.getMonth()];
@@ -62,7 +62,9 @@
         calStr += '</table>';
 
         document.write(calStr)
-              
+        
+      
+
     </script>
     <style>
         table, th, td {border: 1px solid black;}

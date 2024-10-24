@@ -43,4 +43,5 @@ console.log(day);
 const days = ['일','월','화','수','목','금','토'];
 
 console.log(days[date] + "요일");
-console.log(now.getTimezoneOffset());
+console.log(now.getTimezoneOffset()); // UTC(국제표준시)와의 시차 값
+
