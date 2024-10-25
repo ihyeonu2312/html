@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js'></script>
+    <script>
+        $(function(){
+            $("li:nth-child(3)").css("color","red");
+            $("li")
+                .filter(":nth-child(4)")
+                .css("color","green")
+                .text("변경")
+            .end()
+            .css("background","orange")
+                .eq(-2)//뒤에서 두번째 // 첫번째는 0
+                .css({fontSize :'2em'})
+            .end()
+                .filter(":gt(4):not(:nth-child(7))")
+                .css("text-decoration","underline");
+
+                $("input:text").css("width","50%");
+                $("input[type='text']").css("padding",".5em");
+        });
+    </script>
+</head>
+<body>
+    <ol>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+        <li>목록</li>
+    </ol>
+    <input>
+    <input type="text">
+    <input>
+
+</body>
+</html>
