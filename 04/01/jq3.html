@@ -18,7 +18,7 @@
                 .eq(-2)//뒤에서 두번째 // 첫번째는 0
                 .css({fontSize :'2em'})
             .end()
-                .filter(":gt(4):not(:nth-child(7))")
+                .filter(":gt(4):not(:nth-child(7))") // gt(0) -> 0번째 인덱스 이후 부터
                 .css("text-decoration","underline");
 
                 $("input:text").css("width","50%");
